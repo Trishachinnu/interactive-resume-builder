@@ -1,0 +1,47 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.resume-preview {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #000;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #222;
+  color: #eee;
+}
+
+.elegant-theme {
+  background-color: #f5f5dc;
+  font-family: Georgia, serif;
+  color: #333;
+}
+
+.blue-theme {
+  background-color: #e6f2ff;
+  color: #003366;
+}
+
+.modern-theme {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
