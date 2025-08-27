@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Resume Builder</h1>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <button id="downloadPDF">Download PDF</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="form-section">
+        <div class="template-selector">
+          <label for="template">Select Template</label>
+          <select id="template">
+            <option value="modern">Modern</option>
+            <option value="professional">Professional</option>
+            <option value="minimal">Minimal</option>
+            <option value="creative">Creative</option>
+          </select>
+        </div>
+
+        <form id="resumeForm">
+          <h2>Personal Information</h2>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="summary">Professional Summary</label>
+            <textarea id="summary" name="summary" rows="4"></textarea>
+          </div>
+
+          <h2>Experience</h2>
+          <div id="experienceContainer"></div>
+          <button type="button" id="addExperience">Add Experience</button>
+
+          <h2>Education</h2>
+          <div id="educationContainer"></div>
+          <button type="button" id="addEducation">Add Education</button>
+
+          <h2>Skills</h2>
+          <div id="skillsContainer" class="skills-container"></div>
+          <button type="button" id="addSkill">Add Skill</button>
+        </form>
+      </div>
+
+      <div class="preview-section">
+        <div id="preview"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="copyright"><i class="fa-regular fa-copyright"></i> Resume Builder.</p>
+
+      <nav class="footer-nav">
+        <a href="/about">About</a>
+        <a href="/contact">Contact us</a>
+      </nav>
+
+      <div class="social-icons">
+        <a target="_blank" href="https://github.com/Trishachinnu/interactive-resume-builder"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
