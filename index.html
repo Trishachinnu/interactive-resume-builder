@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1 contenteditable="true">Interactive Resume Builder</h1>
+    <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 Dark Mode</button>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <label>Font Size:
+      <select id="fontSize">
+        <option value="14px">14px</option>
+        <option value="16px" selected>16px</option>
+        <option value="18px">18px</option>
+        <option value="20px">20px</option>
+      </select>
+    </label>
+    <label>Font Family:
+      <select id="fontFamily">
+        <option value="Arial" selected>Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Trebuchet MS">Trebuchet MS</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Lucida Console">Lucida Console</option>
+      </select>
+
+    </label>
+    <label>Font Color:
+      <input type="color" id="fontColor" value="#000000">
+    </label>
+    <button onclick="previewResume()">Preview</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+  <!-- Input Form -->
+  <div class="form-section">
+    <h2>Personal Information</h2>
+
+    <label>Profile Picture:</label>
+    <input type="file" id="profilePic" accept="image/*">
+
+    <label>Full Name:</label>
+    <input type="text" id="fullName">
+
+    <label>Email:</label>
+    <input type="text" id="email">
+
+    <label>Phone:</label>
+    <input type="text" id="phone">
+
+    <div class="input-with-icon">
+      <i class="fab fa-github"></i>
+      <input type="text" id="github" placeholder="GitHub">
+    </div>
+
+    <div class="input-with-icon">
+      <i class="fab fa-linkedin"></i>
+      <input type="text" id="linkedin" placeholder="LinkedIn">
+    </div>
+
+    <label>About Me:</label>
+    <textarea id="aboutMe" rows="4"></textarea>
+  </div>
+
+  <!-- Dynamic Fields -->
+  <div class="form-section">
+    <h2>Skills</h2>
+    <div id="skills"></div>
+    <button onclick="addField('skills')">Add Skill</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Education</h2>
+    <div id="education"></div>
+    <button onclick="addField('education')">Add Education</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Experience</h2>
+    <div id="experience"></div>
+    <button onclick="addField('experience')">Add Experience</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Projects</h2>
+    <div id="projects"></div>
+    <button onclick="addField('projects')">Add Project</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Achievements</h2>
+    <div id="achievements"></div>
+    <button onclick="addField('achievements')">Add Achievement</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Certificates</h2>
+    <div id="certificates"></div>
+    <button onclick="addField('certificates')">Add Certificate</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Hobbies</h2>
+    <div id="hobbies"></div>
+    <button onclick="addField('hobbies')">Add Hobby</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Languages</h2>
+    <div id="languages"></div>
+    <button onclick="addField('languages')">Add Language</button>
+  </div>
+
+  <!-- Resume Preview -->
+  <div id="resumePreview" class="resume"></div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 Interactive Resume Builder | Built with ❤️</p>
+  <p>
+    <a href="https://github.com/Trishachinnu/interactive-resume-builder" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    &nbsp;
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  background: #e2f0ff;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 98%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.input-with-icon i {
+  font-size: 18px;
+}
+
+.resume {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-column {
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.resume img {
+  max-width: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.resume-section h3 {
+  border-bottom: 1px solid #aaa;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.resume-section ul {
+  padding-left: 20px;
+}
+
+.resume-section li {
+  margin-bottom: 6px;
+}
+
+.footer {
+  background-color: #0a3871;  
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer i {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #ffd369;  /* Gold accent color */
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #ffffff;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+.dark-mode .form-section {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .resume {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
