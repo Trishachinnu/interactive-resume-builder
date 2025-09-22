@@ -59,7 +59,7 @@ A fully responsive web application that allows users to build, customize, and do
 ---
 
 
-## ⭐ Show Your Support
+# ⭐ Show Your Support
 
 If you like this project:
 
