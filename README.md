@@ -3,7 +3,7 @@
 
 A fully responsive web application that allows users to build, customize, and download their resume in PDF format — all from the browser!
 
-> 🔗 [Live Demo](#) &nbsp;&nbsp;|&nbsp;&nbsp; 📁 [Source Code](https://github.com/Trishachinnu/interactive-resume-builder)
+> 🔗 [Live Demo](#) [&nbsp;&nbsp;|&nbsp;&nbsp](https://sparkling-raindrop-592037.netlify.app); 📁 [Source Code](https://github.com/Trishachinnu/interactive-resume-builder)
 
 ---
 
